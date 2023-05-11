@@ -317,7 +317,7 @@ rreqa4=requests.patch(urla4, headers=hda4, json=jsona4).text
 #print(rreq4)
 if str('{}') in str(rreqa4):
 
-	print(50*"{}")
+	print("{}")
 
 	
 
