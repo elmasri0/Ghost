@@ -312,10 +312,19 @@ hda4={
 }
 
 jsona4={"category": [{"listHierarchyId": "TemplateID", "value": "47"}], "name": "FlexFamily", "parts": {"member": [{"id": [{"schemeName": "MSISDN", "value":ny}], "type": "Owner"}, {"id": [{"schemeName": "MSISDN", "value":number2}], "type": "Member"}]}, "type": "AcceptInvitation"}
-    
-    
+
 rreqa4=requests.patch(urla4, headers=hda4, json=jsona4).text
 #print(rreq4)
+if str('{}') in str(rreqa4):
+	print(50*"=")
+	
+else:
+	print('\033[2;35m _'*65)
+	json=pyfiglet.figlet_format('في باقه نوته علي الخط')
+	print (json)
+	Jdudhdd
+	djudiehe
+	
 
 urla5="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
 
