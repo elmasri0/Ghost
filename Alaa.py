@@ -317,17 +317,13 @@ rreqa4=requests.patch(urla4, headers=hda4, json=jsona4).text
 #print(rreq4)
 if str('{}') in str(rreqa4):
 
-	print(50*"=")
+	print(50*"{}")
 
 	
 
 else:
 
-	print('\033[2;35m _'*65)
-
-	json=pyfiglet.figlet_format('في باقه نوته علي الخط')
-
-	print (json)
+	print('في باقه عنوته علي الخط برجاء الانتظار حتي يتم الغاء الطلب ') 
 urla5="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
 
 hda5={
