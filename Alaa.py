@@ -322,9 +322,6 @@ else:
 	print('\033[2;35m _'*65)
 	json=pyfiglet.figlet_format('في باقه نوته علي الخط')
 	print(json)
-	
-	
-
 urla5="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
 
 
