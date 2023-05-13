@@ -118,7 +118,7 @@ for x in loka:
   pass
 
 
-ny=("01063112487")
+ny=("01008965284")
 print()
 p1=("Alla@@123")
 print()
