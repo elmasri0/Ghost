@@ -543,7 +543,7 @@ rreq5=requests.patch(url5, headers=hd5, json=json5).text
 #	il=pyfiglet.figlet_format(" Added successfully ")
 #	print(il)
 
-time.sleep(3)
+#time.sleep(3)
 print("برجاء التاكد من الاضافه ")
 avt=input('Enter Your Number :')
 prt=input("Enter Your Password :")
