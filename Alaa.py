@@ -23,9 +23,9 @@ print('_'*65)
 os=("by: MR ALAA")
 print(lll+os)
 print('_'*65)
-number=("01032130170")
+number=("01091340528")
 print()
-password=("Elmasri##2")
+password=("Alla@@123")
 print()
 url="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
@@ -118,7 +118,7 @@ for x in loka:
   pass
 
 
-ny=("01091340528")
+ny=("01008965284")
 print()
 p1=("Alla@@123")
 print()
