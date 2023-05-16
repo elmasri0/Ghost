@@ -1,4 +1,4 @@
-import requests, pyfiglet, termcolor, os, sys, os, sys, time, os, sys, time, webbrowser
+import pyfiglet, termcolor, os, sys, os, sys, time, os, sys, time, webbrowser
 
 import requests
 import time
