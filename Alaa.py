@@ -241,9 +241,12 @@ jsona={"category": [{"listHierarchyId": "PackageID", "value": "523"}, {"listHier
     
 lokaa=requests.patch(urla2, headers=hda, json=jsona).text
 #print(loka)
-#if str('{}') in str(loka):
-#	print()
-#	
+if str('{}') in str(rreqa4):
+
+	print("{}")
+else:
+
+	print('الرقم في عيله تاني برجاء الخروج من العيله ')
 	
 urla3="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
