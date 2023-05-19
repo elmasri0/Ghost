@@ -16,7 +16,7 @@ A = '\033[2;34m'#ازرق
 C = '\033[2;35m' #وردي
 B = '\033[2;36m'#سمائي
 Y = '\033[1;34m' #ازرق فاتح
-os=pyfiglet.figlet_format       ( "     __ F L E X __")
+os=pyfiglet.figlet_format       ( "     __ F L E X..+ __")
 print(Z+os)
 
 print('_'*65)
@@ -245,8 +245,11 @@ if str('{}') in str(lokaa):
 
 	print("{}")
 else:
-
 	print('الرقم في عيله تاني برجاء الخروج من العيله ')
+	print('\033[2;31m_'*65)
+	hhhhgg
+	hhhyo
+	jfkfifjfj
 	
 urla3="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
