@@ -280,7 +280,7 @@ dataa3={
 
 "client_id":"my-vodafone-app"
     }
-za=requests.post(urla3 ,headers=headersa3,data=dataa3).json()
+za=requests.post(urla3 ,headers=headersa3,data=dataa3)
 
 #print(Ahmed)
 #print("=" * 40)
