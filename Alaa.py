@@ -16,7 +16,7 @@ A = '\033[2;34m'#ازرق
 C = '\033[2;35m' #وردي
 B = '\033[2;36m'#سمائي
 Y = '\033[1;34m' #ازرق فاتح
-os=pyfiglet.figlet_format       ( "     __ F L E X __")
+os=pyfiglet.figlet_format       ( "     __ F L E X.V1 __")
 print(Z+os)
 
 print('_'*65)
@@ -280,11 +280,24 @@ dataa3={
 
 "client_id":"my-vodafone-app"
     }
-za=requests.post(urla3 ,headers=headersa3,data=dataa3)
+#za=requests.post(urla3 ,headers=headersa3,data=dataa3)
+Ahmed=requests.post(urla3 ,headers=headersa3,data=dataa3).json()
 
 #print(Ahmed)
+
+if 'access_token' in Ahmed:
+
+    loak= Ahmed['access_token']
+
+    pass
+
+else:
+
+    print(lll+"خطأ في الرقم او الباسورد")
+
+    print(Z+"="*50)
+#print(Ahmed)
 #print("=" * 40)
-loak=za.json()["access_token"]
 
 
 
