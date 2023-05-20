@@ -118,10 +118,7 @@ for x in loka:
   pass
 
 
-ny=("01091340528")
-print()
-p1=("Alla@@123")
-print()
+
 #time.sleep(1.5)
 number2=input(" \033[2;32mEnter Your Number :")
 print()
@@ -152,18 +149,6 @@ else:
 	hhhhgg
 	hhhyo
 	jfkfifjfj
-gcav="0"
-print()
-
-qwe=13000
-zxc=100
-jt=int(gcav)
-k=(qwe*jt/zxc)
-oopl=str(k)
-#time.sleep(1.5)
-print()
-lokae=('              '+(lll+oopl))
-print(lokae)
 gs="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
 hhy={
@@ -229,90 +214,6 @@ else:
     print(Z+"="*50)
     jfkfifjfj
     hhhyo
-urla="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
-
-
-
-headersa={
-    "Accept":"application/json, text/plain, */*",
-    "Connection":"keep-alive",
-    "x-dynatrace":"MT_3_17_998679495_45-0_a556db1b-4506-43f3-854a-1d2527767923_0_18957_273",
-    "x-agent-operatingsystem":"1630483957",
-    "clientId":"AnaVodafoneAndroid",
-    "x-agent-device":"RMX1911",
-    "x-agent-version":"2021.12.2",
-    "x-agent-build":"493",
-    "Content-Type":"application/x-www-form-urlencoded",
-    "Content-Length":"143",
-    "Host":"mobile.vodafone.com.eg",
-    "Accept-Encoding":"gzip",
-    "User-Agent":"okhttp/4.9.1"
-    }
-    
-    
-dataa={
-"username":ny,
-
-"password":p1,
-
-"grant_type":"password",
-
-"client_secret":"a2ec6fff-0b7f-4aa4-a733-96ceae5c84c3",
-
-"client_id":"my-vodafone-app"
-    }    
-    
-    
-Ahmead=requests.post(urla, headers=headersa, data=dataa)
-
-#print(res)
-
-jwat=Ahmead.json()["access_token"]
-
-
-#print("\033[1;33m=" * 40)
-
-#print(jwt)
-
-
-urla2="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
-
-
-#print(url2)
-
-hda={
-    
-    "Host": "mobile.vodafone.com.eg",
-    "x-dynatrace":"MT_3_13_2611661057_68-0_a556db1b-4506-43f3-854a-1d2527767923_0_77308_312",
-    "msisdn": ny,
-    "api-version":"v2",
-    "x-agent-operatingsystem":"1630483957",
-    "clientId":"AnaVodafoneAndroid",
-    "Authorization": "Bearer "+(jwat)+"",
-    "x-agent-device":"RMX1911",
-    "Accept": "application/json",
-    "x-agent-version":"2022.2.1.2",
-    "x-agent-build":"503",
-    "Accept-Language":"ar",
-    "Content-Type":"application/json; charset=UTF-8",
-    "Content-Length":"302",
-    "Connection":"Keep-Alive",
-    "Accept-Encoding":"gzip",
-    "User-Agent":"okhttp/4.9.1"
-}
-
-jsona={"category": [{"listHierarchyId": "PackageID", "value": "523"}, {"listHierarchyId": "TemplateID", "value": "47"}, {"listHierarchyId": "TierID", "value": "523"}, {"listHierarchyId": "familybehavior", "value": "percentage"}], "name": "FlexFamily", "parts": {"characteristicsValue": {"characteristicsValue": [{"characteristicName": "quotaDist1", "type": "percentage", "value": gcav,}]}, "member": [{"id": [{"schemeName": "MSISDN", "value":ny,}], "type": "Owner"}, {"id": [{"schemeName": "MSISDN", "value":number2}], "type": "Member"}]}, "type": "SendInvitation"}
-    
-    
-lokaa=requests.patch(urla2, headers=hda, json=jsona).text
-#print(loka)
-if str('{}') in str(lokaa):
-
-	print("{}")
-else:
-	print('الرقم في عيله تاني برجاء الخروج من العيله ')
-	print('\033[2;31m_'*65)
-	
 urla3="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
 
@@ -362,81 +263,6 @@ else:
 
     print(Z+"="*50)
 #print(Ahmed)
-#print("=" * 40)
-
-
-
-urla4="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
-
-
-hda4={
-    
-    "Host": "mobile.vodafone.com.eg",
-    "x-dynatrace":"MT_3_13_2611661057_68-0_a556db1b-4506-43f3-854a-1d2527767923_0_77308_312",
-    "msisdn": number2,
-    "api-version":"v2",
-    "x-agent-operatingsystem":"1630483957",
-    "clientId":"AnaVodafoneAndroid",
-    "Authorization": "Bearer "+(loak)+"",
-    "x-agent-device":"RMX1911",
-    "Accept": "application/json",
-    "x-agent-version":"2022.2.1.2",
-    "x-agent-build":"503",
-    "Accept-Language":"ar",
-    "Content-Type":"application/json; charset=UTF-8",
-    "Content-Length":"302",
-    "Connection":"Keep-Alive",
-    "Accept-Encoding":"gzip",
-    "User-Agent":"okhttp/4.9.1"
-}
-
-jsona4={"category": [{"listHierarchyId": "TemplateID", "value": "47"}], "name": "FlexFamily", "parts": {"member": [{"id": [{"schemeName": "MSISDN", "value":ny}], "type": "Owner"}, {"id": [{"schemeName": "MSISDN", "value":number2}], "type": "Member"}]}, "type": "AcceptInvitation"}
-
-rreqa4=requests.patch(urla4, headers=hda4, json=jsona4).text
-#print(rreq4)
-if str('{}') in str(rreqa4):
-
-	print("{}")
-
-	
-
-else:
-
-	print('في باقه عنوته علي الخط برجاء الانتظار حتي يتم الغاء الطلب ') 
-urla5="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
-
-hda5={
-    
-    "Host": "mobile.vodafone.com.eg",
-    "x-dynatrace":"MT_3_13_2611661057_68-0_a556db1b-4506-43f3-854a-1d2527767923_0_77308_312",
-    "msisdn": ny,
-    "api-version":"v2",
-    "x-agent-operatingsystem":"1630483957",
-    "clientId":"AnaVodafoneAndroid",
-    "Authorization": "Bearer "+(jwat)+"",
-    "x-agent-device":"RMX1911",
-    "Accept": "application/json",
-    "x-agent-version":"2022.2.1.2",
-    "x-agent-build":"503",
-    "Accept-Language":"ar",
-    "Content-Type":"application/json; charset=UTF-8",
-    "Content-Length":"302",
-    "Connection":"Keep-Alive",
-    "Accept-Encoding":"gzip",
-    "User-Agent":"okhttp/4.9.1"
-}
-
-jsona5={"category": [{"listHierarchyId": "TemplateID","value": "47"}], "createdBy": {"value": "MobileApp"},"parts": {"characteristicsValue": {"characteristicsValue": [{"characteristicName": "Disconnect", "value":"0"},{"characteristicName": "LastMemberDeletion", "value": "1"}]},"member": [{"id": [{"schemeName": "MSISDN","value": ny}], "type": "Owner"},{"id": [{"schemeName": "MSISDN", "value": number2}], "type": "Member"}]},"type": "FamilyRemoveMember"}
-
-reqt=requests.patch(urla5, headers=hda5, json=jsona5).text
-if str('{}') in str(reqt):
-	print('\033[2;32m='*50)
-	
-else:
-	print('\033[1;31m='*50)
-	json=pyfiglet.figlet_format('erorr')
-	print (json)
-
 url="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
 
