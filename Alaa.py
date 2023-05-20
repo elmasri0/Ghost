@@ -340,10 +340,16 @@ json={"category": [{"listHierarchyId": "PackageID", "value": "523"}, {"listHiera
     
 loka=requests.patch(url2, headers=hd, json=json).text
 #print(loka)
-#if str('{}') in str(loka):
-#	print()
-#	
-	
+if str('{}') in str(loka):
+
+	print("{}")	
+
+else:
+
+	print("الرقم موجود في عيله اخري ") 
+
+	print('\033[2;35m _'*65)
+	hdhdhdjd
 url3="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
 
@@ -415,7 +421,15 @@ json4={"category": [{"listHierarchyId": "TemplateID", "value": "47"}], "name": "
     
 rreq4=requests.patch(url4, headers=hd4, json=json4).text
 #print(rreq4)
+if str('{}') in str(rreq4):
 
+	print("{}")	
+
+else:
+
+	prin("الخط عليه نوته برجاء الانتظار حتي يتم الغاء الطلب ") 
+	print('\033[2;35m _'*65)
+	hdhdhdjd
 url5="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
 
 
