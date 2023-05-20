@@ -279,14 +279,16 @@ dataa3={
 "client_secret":"a2ec6fff-0b7f-4aa4-a733-96ceae5c84c3",
 
 "client_id":"my-vodafone-app"
-    }    
-    
-    
-za=requests.post(urla3, headers=headersa3, data=dataa3)
+    }
+za=requests.post(urla3 ,headers=headersa3,data=dataa3).json()
 
-loak=za.json()["access_token"]
+#print(Ahmed)
 
-
+if 'access_token' in za:
+    loak = za['access_token']
+    pass
+else:
+    print(Z+"خطأ في الرقم او الباسورد") 
 #print("=" * 40)
 
 
