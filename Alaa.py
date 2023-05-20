@@ -225,10 +225,10 @@ if 'access_token' in Gn:
     pass
 
 else:
-
-    print(lll+"خطأ في الرقم او الباسورد")
-
+    print(lll+"خطأ في الرقم او الباسورد") 
     print(Z+"="*50)
+    jfkfifjfj
+    hhhyo
 urla="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
 
