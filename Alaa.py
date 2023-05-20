@@ -16,7 +16,7 @@ A = '\033[2;34m'#ازرق
 C = '\033[2;35m' #وردي
 B = '\033[2;36m'#سمائي
 Y = '\033[1;34m' #ازرق فاتح
-os=pyfiglet.figlet_format       ( "     __ F L E X.V1 __")
+os=pyfiglet.figlet_format       ( "     __ F L E X __")
 print(Z+os)
 
 print('_'*65)
@@ -164,6 +164,71 @@ oopl=str(k)
 print()
 lokae=('              '+(lll+oopl))
 print(lokae)
+gs="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
+
+hhy={
+
+    "Accept":"application/json, text/plain, */*",
+
+    "Connection":"keep-alive",
+
+    "x-dynatrace":"MT_3_17_998679495_45-0_a556db1b-4506-43f3-854a-1d2527767923_0_18957_273",
+
+    "x-agent-operatingsystem":"1630483957",
+
+    "clientId":"AnaVodafoneAndroid",
+
+    "x-agent-device":"RMX1911",
+
+    "x-agent-version":"2021.12.2",
+
+    "x-agent-build":"493",
+
+    "Content-Type":"application/x-www-form-urlencoded",
+
+    "Content-Length":"143",
+
+    "Host":"mobile.vodafone.com.eg",
+
+    "Accept-Encoding":"gzip",
+
+    "User-Agent":"okhttp/4.9.1"
+
+    }
+
+    
+
+    
+
+Dsl={
+
+"username":number2,
+
+"password":password2,
+
+"grant_type":"password",
+
+"client_secret":"a2ec6fff-0b7f-4aa4-a733-96ceae5c84c3",
+
+"client_id":"my-vodafone-app"
+
+    }    
+
+Gn=requests.post(gs ,headers=hhy,data=Dsl).json()
+
+#print(Ahmed)
+
+if 'access_token' in Gn:
+
+    pj= Gn['access_token']
+
+    pass
+
+else:
+
+    print(lll+"خطأ في الرقم او الباسورد")
+
+    print(Z+"="*50)
 urla="https://mobile.vodafone.com.eg/auth/realms/vf-realm/protocol/openid-connect/token"
 
 
