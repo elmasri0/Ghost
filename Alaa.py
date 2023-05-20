@@ -285,11 +285,13 @@ za=requests.post(urla3 ,headers=headersa3,data=dataa3).json()
 #print(Ahmed)
 
 if 'access_token' in za:
-    loak = za['access_token']
+    loak=za.json()["access_token"]
     pass
 else:
     print(Z+"خطأ في الرقم او الباسورد") 
 #print("=" * 40)
+
+
 
 
 urla4="https://mobile.vodafone.com.eg/services/dxl/cg/customerGroupAPI/customerGroup"
