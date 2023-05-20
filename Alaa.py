@@ -118,7 +118,7 @@ for x in loka:
   pass
 
 
-
+print("")
 #time.sleep(1.5)
 number2=input(" \033[2;32mEnter Your Number :")
 print()
